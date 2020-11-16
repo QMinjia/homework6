@@ -55,11 +55,13 @@ document.querySelector("#volumeSlider").addEventListener("change", function() {
 });
 
 document.querySelector("#old").addEventListener("click", function() {
-	document.getElementById("myVideo").style.filter = "grayscale(100%)";
+	// document.getElementById("myVideo").style.filter = "grayscale(100%)";
+	document.getElementById("myVideo").classList.add('oldTime')
 	console.log("Old School");
 });
 
 document.querySelector("#original").addEventListener("click", function() {
-	document.getElementById("myVideo").style.filter = "grayscale(0%)";
+	// document.getElementById("myVideo").style.filter = "grayscale(0%)";
+	document.getElementById("myVideo").classList.remove('oldTime')
 	console.log("original");
 });
